@@ -262,7 +262,13 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/70 text-sm text-center sm:text-right">
-            © {currentYear} مدرسة نماء. جميع الحقوق محفوظة.
+            © {currentYear} مدرسة نماء. جميع الحقوق محفوظة. | تصميم وتطوير{" "}
+            <a
+              href="#"
+              className="text-[#68A578] hover:text-white transition-colors duration-300 font-semibold"
+            >
+              Ziad Ayman
+            </a>
           </p>
           <div className="flex gap-6 text-sm">
             <Link
