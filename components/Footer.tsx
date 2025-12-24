@@ -264,7 +264,9 @@ export default function Footer() {
           <p className="text-white/70 text-sm text-center sm:text-right">
             © {currentYear} مدرسة نماء. جميع الحقوق محفوظة. | تصميم وتطوير{" "}
             <a
-              href="#"
+              href="https://www.facebook.com/ziad.ayman.311493"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[#68A578] hover:text-white transition-colors duration-300 font-semibold"
             >
               Ziad Ayman
