@@ -29,13 +29,61 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#4A7C59] to-[#68A578] rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
-                <span className="text-white font-bold text-xl">ح</span>
+            <Link href="/" className="flex items-center gap-3 group w-fit select-none">
+              {/* Icon */}
+              <div className="relative">
+                <div className="
+                  w-11 h-11 sm:w-14 sm:h-14
+                  rounded-full
+                  bg-gradient-to-br from-[#2F6F4E] via-[#3E8B63] to-[#6DBE8A]
+                  flex items-center justify-center
+                  transition-all duration-500
+                  group-hover:scale-105
+                  shadow-md group-hover:shadow-[#6DBE8A]/40
+                ">
+                  {/* Seed / Growth Icon */}
+                  <svg
+                    className="w-5 h-5 sm:w-7 sm:h-7 text-white transition-transform duration-500 group-hover:-rotate-6"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M12 2C9 6 6 9 6 13a6 6 0 0012 0c0-4-3-7-6-11z" />
+                  </svg>
+                </div>
+
+                {/* Soft Pulse Ring */}
+                <span className="
+                  absolute inset-0 rounded-full
+                  border border-[#6DBE8A]/30
+                  opacity-0 group-hover:opacity-100
+                  scale-110
+                  transition-all duration-500
+                "/>
               </div>
-              <span className="text-2xl font-bold group-hover:text-[#68A578] transition-colors duration-300">
-                مدرسة حياة
-              </span>
+
+              {/* Text */}
+              <div className="flex flex-col leading-tight">
+                <span
+                  className="
+                    text-lg sm:text-xl md:text-2xl font-semibold tracking-wide
+                    text-white
+                    transition-colors duration-300
+                    group-hover:text-[#68A578]
+                  "
+                >
+                  مدرسة حياة
+                </span>
+
+                <span
+                  className="
+                    text-[10px] sm:text-xs font-medium tracking-widest uppercase
+                    text-[#A7E3C3]
+                    transition-colors duration-300
+                  "
+                >
+                  Hayah School
+                </span>
+              </div>
             </Link>
             <p className="text-white/80 leading-relaxed">
               نبني مستقبلًا أخضر من خلال تعليم متميز يجمع بين الأصالة والحداثة مع
