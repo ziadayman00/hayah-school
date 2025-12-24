@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Lightbox from "./Lightbox";
 
 interface Facility {
   id: string;
@@ -30,8 +32,15 @@ export default function About() {
   const [selectedStage, setSelectedStage] = useState<Stage | null>(null);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
+    // If we are on the dedicated about page, show content immediately
+    if (pathname === "/about") {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -46,7 +55,7 @@ export default function About() {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   const facilities: Facility[] = [
     {
@@ -771,38 +780,13 @@ export default function About() {
         </div>
       )}
 
-      {/* Image Lightbox - Minimal Design */}
-      {lightboxImage && (
-        <div
-          className="fixed inset-0 bg-black/90 backdrop-blur-md z-[60] flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setLightboxImage(null)}
-        >
-          {/* Close Button */}
-          <button
-            onClick={() => setLightboxImage(null)}
-            className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 hover:rotate-90 transition-all duration-300 z-10"
-            aria-label="إغلاق"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
 
-          {/* Image Container */}
-          <div
-            className="relative w-full h-full max-w-6xl max-h-[85vh]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <Image
-              src={lightboxImage}
-              alt="عرض الصورة"
-              fill
-              className="object-contain"
-              quality={100}
-            />
-          </div>
-        </div>
-      )}
+      {/* Image Lightbox - Reusable Component */}
+      <Lightbox
+        src={lightboxImage}
+        alt="عرض الصورة"
+        onClose={() => setLightboxImage(null)}
+      />
     </section>
   );
 }
