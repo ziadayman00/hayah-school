@@ -309,9 +309,14 @@ export default function ApplicationForm() {
                     </div>
                     <div>
                       <p className="font-semibold mb-1">الهاتف</p>
-                      <p className="text-white/90 text-sm sm:text-base" dir="ltr">
-                        +20 123 456 7890
-                      </p>
+                      <div className="text-white/90 text-sm sm:text-base flex flex-col gap-1" dir="ltr">
+                        <a href="tel:+201027976672" className="hover:text-white transition-colors">
+                          +20 102 797 6672
+                        </a>
+                        <a href="tel:+201018543503" className="hover:text-white transition-colors">
+                          +20 101 854 3503
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -333,9 +338,14 @@ export default function ApplicationForm() {
                     </div>
                     <div>
                       <p className="font-semibold mb-1">العنوان</p>
-                      <p className="text-white/90 text-sm sm:text-base">
-                        القاهرة، مصر
-                      </p>
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=New+Mansoura"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/90 text-sm sm:text-base hover:text-white transition-colors"
+                      >
+                        المنصورة الجديدة
+                      </a>
                     </div>
                   </div>
                 </div>

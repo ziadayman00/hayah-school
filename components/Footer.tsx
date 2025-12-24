@@ -208,35 +208,46 @@ export default function Footer() {
               <li className="flex items-start gap-3 group">
                 <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">📞</span>
                 <div>
-                  <div className="text-white/80 text-sm flex flex-col gap-1" dir="ltr">
-                    <p>+20 102 797 6672</p>
-                    <p>+20 101 854 3503</p>
-                  </div>
+                <div className="text-white/80 text-sm flex flex-col gap-1" dir="ltr">
+                  <a href="tel:+201027976672" className="hover:text-white transition-colors">
+                    +20 102 797 6672
+                  </a>
+                  <a href="tel:+201018543503" className="hover:text-white transition-colors">
+                    +20 101 854 3503
+                  </a>
                 </div>
-              </li>
-              <li className="flex items-start gap-3 group">
-                <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">✉️</span>
-                <div>
-                  <p className="text-white/80 text-sm break-all">
-                    info@namaaschool.edu.eg
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3 group">
-                <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">📍</span>
-                <div>
-                  <p className="text-white/80 text-sm">المنصورة الجديدة</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3 group">
-                <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">🕐</span>
-                <div>
-                  <p className="text-white/80 text-sm">
-                    الأحد - الخميس
-                    <br />
-                    8:00 ص - 3:00 م
-                  </p>
-                </div>
+              </div>
+            </li>
+            <li className="flex items-start gap-3 group">
+              <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">✉️</span>
+              <div>
+                <p className="text-white/80 text-sm break-all">
+                  info@namaaschool.edu.eg
+                </p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3 group">
+              <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">📍</span>
+              <div>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=New+Mansoura"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 text-sm hover:text-white transition-colors"
+                >
+                  المنصورة الجديدة
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3 group">
+              <span className="text-[#E5C56C] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">🕐</span>
+              <div>
+                <p className="text-white/80 text-sm">
+                  الأحد - الخميس
+                  <br />
+                  8:00 ص - 3:00 م
+                </p>
+              </div>
               </li>
             </ul>
           </div>
