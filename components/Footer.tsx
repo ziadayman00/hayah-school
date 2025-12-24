@@ -71,7 +71,7 @@ export default function Footer() {
                     group-hover:text-[#68A578]
                   "
                 >
-                  مدرسة حياة
+                  مدرسة نماء
                 </span>
 
                 <span
@@ -81,7 +81,7 @@ export default function Footer() {
                     transition-colors duration-300
                   "
                 >
-                  Hayah School
+                  Namaa School
                 </span>
               </div>
             </Link>
@@ -225,23 +225,24 @@ export default function Footer() {
               <li className="flex items-start gap-3 group">
                 <span className="text-[#68A578] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">📞</span>
                 <div>
-                  <p className="text-white/80 text-sm" dir="ltr">
-                    +20 123 456 7890
-                  </p>
+                  <div className="text-white/80 text-sm flex flex-col gap-1" dir="ltr">
+                    <p>+20 102 797 6672</p>
+                    <p>+20 101 854 3503</p>
+                  </div>
                 </div>
               </li>
               <li className="flex items-start gap-3 group">
                 <span className="text-[#68A578] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">✉️</span>
                 <div>
                   <p className="text-white/80 text-sm break-all">
-                    info@hayahschool.edu.eg
+                    info@namaaschool.edu.eg
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-3 group">
                 <span className="text-[#68A578] text-xl mt-1 group-hover:scale-110 transition-transform duration-300">📍</span>
                 <div>
-                  <p className="text-white/80 text-sm">القاهرة، مصر</p>
+                  <p className="text-white/80 text-sm">المنصورة الجديدة</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 group">
@@ -261,7 +262,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/70 text-sm text-center sm:text-right">
-            © {currentYear} مدرسة حياة. جميع الحقوق محفوظة.
+            © {currentYear} مدرسة نماء. جميع الحقوق محفوظة.
           </p>
           <div className="flex gap-6 text-sm">
             <Link

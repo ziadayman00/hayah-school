@@ -322,7 +322,7 @@ export default function ApplicationForm() {
                     <div>
                       <p className="font-semibold mb-1">البريد الإلكتروني</p>
                       <p className="text-white/90 text-sm sm:text-base break-all">
-                        info@hayahschool.edu.eg
+                        info@namaaschool.edu.eg
                       </p>
                     </div>
                   </div>
@@ -344,7 +344,7 @@ export default function ApplicationForm() {
               {/* Why Choose Us */}
               <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl">
                 <h3 className="text-2xl font-bold text-[#1e3a5f] mb-6">
-                  لماذا مدرسة حياة؟
+                  لماذا مدرسة نماء؟
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">

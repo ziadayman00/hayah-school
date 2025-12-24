@@ -77,6 +77,12 @@ export default function Gallery() {
             جولة بصرية في أرجاء مدرستنا، حيث يلتقي التعليم المتميز بالبيئة
             المحفزة للإبداع
           </p>
+          <div className="inline-block bg-[#4A7C59]/10 px-4 py-2 rounded-lg mt-4">
+            <p className="text-sm font-medium text-[#4A7C59] flex items-center gap-2">
+              <span className="text-lg">🤖</span>
+              تنويه: جميع الصور المعروضة تم إنشاؤها بواسطة الذكاء الاصطناعي لأغراض التوضيح
+            </p>
+          </div>
         </div>
 
         {/* Filter Buttons */}

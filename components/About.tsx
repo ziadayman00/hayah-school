@@ -263,7 +263,7 @@ export default function About() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1e3a5f] mb-4">
-              مرحبًا بكم في مدرسة حياة
+              مرحبًا بكم في مدرسة نماء
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               نؤمن بأن التعليم المتميز يبدأ من بيئة صحية ومستدامة

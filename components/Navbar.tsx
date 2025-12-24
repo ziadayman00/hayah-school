@@ -83,7 +83,7 @@ export default function Navbar() {
                   group-hover:text-[#2F6F4E]
                 `}
               >
-                مدرسة حياة
+                مدرسة نماء
               </span>
 
               <span
@@ -93,7 +93,7 @@ export default function Navbar() {
                   ${subTextColor}
                 `}
               >
-                Hayah School
+                Namaa School
               </span>
             </div>
           </Link>

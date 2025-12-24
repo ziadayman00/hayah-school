@@ -51,7 +51,7 @@ export default function AboutSummary() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1e3a5f] mb-4">
-              مرحبًا بكم في مدرسة حياة
+              مرحبًا بكم في مدرسة نماء
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               نؤمن بأن التعليم المتميز يبدأ من بيئة صحية ومستدامة
@@ -189,7 +189,7 @@ export default function AboutSummary() {
           >
             <div className="text-center mb-8">
               <h3 className="text-2xl sm:text-3xl font-bold text-[#1e3a5f] mb-3">
-                لماذا مدرسة حياة؟
+                لماذا مدرسة نماء؟
               </h3>
               <p className="text-gray-600">
                 مرافق حديثة وبيئة تعليمية متميزة

@@ -25,7 +25,7 @@ export default function GalleryPage() {
             معرض الصور
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            استكشف مرافقنا الحديثة وأجواء التعلم الملهمة في مدرسة حياة
+            استكشف مرافقنا الحديثة وأجواء التعلم الملهمة في مدرسة نماء
           </p>
         </div>
       </div>

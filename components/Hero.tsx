@@ -35,7 +35,7 @@ export default function Hero() {
           >
             <Image
               src={img}
-              alt={`مدرسة حياة ${index + 1}`}
+              alt={`مدرسة نماء ${index + 1}`}
               fill
               priority={index === 0}
               className="object-cover"
@@ -75,7 +75,7 @@ export default function Hero() {
           >
             مدرسة{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#68A578] to-[#4A7C59] drop-shadow-lg">
-              حياة
+              نماء
             </span>
           </h1>
 
