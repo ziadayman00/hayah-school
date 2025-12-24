@@ -6,8 +6,8 @@
   --foreground: #171717;
   
   /* Brand Colors */
-  --primary-green: #4A7C59;
-  --primary-green-light: #68A578;
+  --primary-green: #C5A028;
+  --primary-green-light: #E5C56C;
   --primary-blue: #1e3a5f;
   --primary-blue-light: #2a4d7f;
   --accent-gold: #B8956A;
@@ -187,10 +187,10 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(74, 124, 89, 0.3);
+    box-shadow: 0 0 20px rgba(197, 160, 40, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(74, 124, 89, 0.6);
+    box-shadow: 0 0 30px rgba(197, 160, 40, 0.6);
   }
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(74, 124, 89, 0.4);
+  box-shadow: 0 0 30px rgba(197, 160, 40, 0.4);
 }
 
 /* Custom Scrollbar */

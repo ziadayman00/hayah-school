@@ -31,7 +31,7 @@ export default function Navbar() {
 
   // Dynamic colors based on state
   const textColor = isTransparent ? "text-white" : "text-[#1e3a5f]";
-  const subTextColor = isTransparent ? "text-[#A7E3C3]" : "text-[#68A578]";
+  const subTextColor = isTransparent ? "text-[#F3E5AB]" : "text-[#C5A028]";
   const navBg = isTransparent ? "bg-transparent" : "bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-200/50";
 
   return (
@@ -47,26 +47,33 @@ export default function Navbar() {
               <div className="
                 w-11 h-11 sm:w-14 sm:h-14
                 rounded-full
-                bg-gradient-to-br from-[#2F6F4E] via-[#3E8B63] to-[#6DBE8A]
+                bg-gradient-to-br from-[#AA861E] via-[#C5A028] to-[#E5C56C]
                 flex items-center justify-center
                 transition-all duration-500
                 group-hover:scale-105
-                shadow-md group-hover:shadow-[#6DBE8A]/40
+                shadow-md group-hover:shadow-[#E5C56C]/40
               ">
                 {/* Seed / Growth Icon */}
                 <svg
-                  className="w-5 h-5 sm:w-7 sm:h-7 text-white transition-transform duration-500 group-hover:-rotate-6"
+                  className="w-5 h-5 sm:w-7 sm:h-7 text-white transition-transform duration-500 group-hover:-rotate-12"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M12 2C9 6 6 9 6 13a6 6 0 0012 0c0-4-3-7-6-11z" />
+                  <path d="M7 20h10" />
+                  <path d="M10 20c5.5-2.5.8-6.4 3-10" />
+                  <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+                  <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
                 </svg>
               </div>
 
               {/* Soft Pulse Ring */}
               <span className="
                 absolute inset-0 rounded-full
-                border border-[#6DBE8A]/30
+                border border-[#E5C56C]/30
                 opacity-0 group-hover:opacity-100
                 scale-110
                 transition-all duration-500
@@ -80,7 +87,7 @@ export default function Navbar() {
                   text-lg sm:text-xl md:text-2xl font-semibold tracking-wide
                   transition-colors duration-300
                   ${textColor}
-                  group-hover:text-[#2F6F4E]
+                  group-hover:text-[#C5A028]
                 `}
               >
                 مدرسة نماء
@@ -110,10 +117,10 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-base font-medium transition-all duration-300 relative group overflow-hidden ${textColor} hover:text-[#4A7C59]`}
+                className={`text-base font-medium transition-all duration-300 relative group overflow-hidden ${textColor} hover:text-[#C5A028]`}
               >
                 {item.name}
-                <span className="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-[#4A7C59] to-[#68A578] transform translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                <span className="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-[#C5A028] to-[#E5C56C] transform translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               </Link>
             ))}
           </div>
@@ -166,7 +173,7 @@ export default function Navbar() {
                 className={`font-medium transition-all duration-300 py-3 px-4 rounded-lg bg-gray-50/50 hover:bg-white ${
                   isTransparent
                     ? "text-white hover:bg-white/10"
-                    : "text-[#2C2C2C] hover:text-[#4A7C59]"
+                    : "text-[#2C2C2C] hover:text-[#C5A028]"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

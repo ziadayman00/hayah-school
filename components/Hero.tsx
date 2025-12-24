@@ -45,12 +45,12 @@ export default function Hero() {
         ))}
         {/* Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/30 to-[#4A7C59]/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/30 to-[#C5A028]/30" />
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-1/4 left-10 w-32 h-32 bg-[#4A7C59]/10 rounded-full blur-3xl animate-float hidden md:block" />
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-[#68A578]/10 rounded-full blur-3xl animate-float animation-delay-2000 hidden md:block" />
+      <div className="absolute top-1/4 left-10 w-32 h-32 bg-[#C5A028]/10 rounded-full blur-3xl animate-float hidden md:block" />
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-[#E5C56C]/10 rounded-full blur-3xl animate-float animation-delay-2000 hidden md:block" />
 
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 sm:py-24">
@@ -61,7 +61,7 @@ export default function Hero() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
             }`}
           >
-            <span className="w-2 h-2 bg-[#68A578] rounded-full animate-pulse" />
+            <span className="w-2 h-2 bg-[#E5C56C] rounded-full animate-pulse" />
             <span className="text-white text-xs sm:text-sm md:text-base font-semibold tracking-wide">
               الاستدامة البيئية • التعليم المتميز
             </span>
@@ -74,7 +74,7 @@ export default function Hero() {
             }`}
           >
             مدرسة{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#68A578] to-[#4A7C59] drop-shadow-lg">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E5C56C] to-[#C5A028] drop-shadow-lg">
               نماء
             </span>
           </h1>
@@ -105,7 +105,7 @@ export default function Hero() {
           >
             <Link
               href="#apply"
-              className="group w-full sm:w-auto bg-gradient-to-r from-[#4A7C59] to-[#68A578] text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-[#4A7C59]/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 relative overflow-hidden"
+              className="group w-full sm:w-auto bg-gradient-to-r from-[#C5A028] to-[#E5C56C] text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:shadow-[#C5A028]/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 قدّم الآن
@@ -113,7 +113,7 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#68A578] to-[#4A7C59] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#E5C56C] to-[#C5A028] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
             <Link
               href="/about"
@@ -149,7 +149,7 @@ export default function Hero() {
                     {stat.icon}
                   </div>
                 )}
-                <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#68A578] mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#E5C56C] mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
                 <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">

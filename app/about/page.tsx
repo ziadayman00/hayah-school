@@ -18,7 +18,7 @@ export default function AboutPage() {
         
         {/* Content */}
         <div className="relative z-10 text-center px-4 animate-fade-in">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#A7E3C3] text-sm font-medium mb-4">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#E5C56C] text-sm font-medium mb-4">
             عن المدرسة
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">

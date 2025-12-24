@@ -30,7 +30,7 @@ export default function Stages() {
       title: "الحضانة",
       age: "3-5 سنوات",
       icon: "🎨",
-      color: "from-[#68A578] to-[#4A7C59]",
+      color: "from-[#E5C56C] to-[#C5A028]",
       image: "/images/kindergarten.jpeg",
       description:
         "بيئة آمنة ومحفزة لتنمية المهارات الأساسية من خلال اللعب والاستكشاف",
@@ -62,7 +62,7 @@ export default function Stages() {
       title: "الإعدادي",
       age: "13-15 سنة",
       icon: "🎓",
-      color: "from-[#B8956A] to-[#D4C5B0]",
+      color: "from-[#1E7F5C] to-[#5EC4A1]",
       image: "/images/facilities-gym.jpeg",
       description:
         "إعداد الطلاب للمرحلة الثانوية مع التركيز على التميز الأكاديمي والقيادة",
@@ -82,7 +82,7 @@ export default function Stages() {
       className="py-16 sm:py-20 lg:py-28 bg-white relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-20 right-0 w-72 h-72 bg-[#4A7C59]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-0 w-72 h-72 bg-[#C5A028]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-[#1e3a5f]/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -95,9 +95,9 @@ export default function Stages() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 bg-[#4A7C59]/10 px-4 sm:px-6 py-2 rounded-full mb-4 hover:bg-[#4A7C59]/20 transition-colors">
-              <span className="w-2 h-2 bg-[#4A7C59] rounded-full animate-pulse" />
-              <span className="text-[#4A7C59] font-semibold text-sm sm:text-base">
+            <div className="inline-flex items-center gap-2 bg-[#C5A028]/10 px-4 sm:px-6 py-2 rounded-full mb-4 hover:bg-[#C5A028]/20 transition-colors">
+              <span className="w-2 h-2 bg-[#C5A028] rounded-full animate-pulse" />
+              <span className="text-[#C5A028] font-semibold text-sm sm:text-base">
                 المراحل التعليمية
               </span>
             </div>

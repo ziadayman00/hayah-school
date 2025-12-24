@@ -83,7 +83,7 @@ export default function ApplicationForm() {
       className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-[#FDFBF7] to-white relative overflow-hidden"
     >
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-[#4A7C59]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-72 h-72 bg-[#C5A028]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1e3a5f]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -96,14 +96,14 @@ export default function ApplicationForm() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 bg-[#4A7C59]/10 px-4 sm:px-6 py-2 rounded-full mb-4">
-              <span className="w-2 h-2 bg-[#4A7C59] rounded-full animate-pulse" />
-              <span className="text-[#4A7C59] font-semibold text-sm sm:text-base">
+            <div className="inline-flex items-center gap-2 bg-[#C5A028]/10 px-4 sm:px-6 py-2 rounded-full mb-4">
+              <span className="w-2 h-2 bg-[#C5A028] rounded-full animate-pulse" />
+              <span className="text-[#C5A028] font-semibold text-sm sm:text-base">
                 انضم إلينا
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1e3a5f] mb-4">
-              قدّم الآن لطفلك
+              قدّم الآن
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
               املأ النموذج وسنتواصل معك في أقرب وقت لاستكمال إجراءات التسجيل
@@ -138,7 +138,7 @@ export default function ApplicationForm() {
                     value={formData.parentName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors text-gray-900"
                     placeholder="أدخل اسمك الكامل"
                   />
                 </div>
@@ -159,7 +159,7 @@ export default function ApplicationForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors text-gray-900"
                       placeholder="01xxxxxxxxx"
                     />
                   </div>
@@ -178,7 +178,7 @@ export default function ApplicationForm() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors text-gray-900"
                       placeholder="email@example.com"
                     />
                   </div>
@@ -199,7 +199,7 @@ export default function ApplicationForm() {
                     value={formData.studentName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors text-gray-900"
                     placeholder="أدخل اسم الطالب/ة"
                   />
                 </div>
@@ -218,7 +218,7 @@ export default function ApplicationForm() {
                     value={formData.stage}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors bg-white"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors bg-white text-gray-900"
                   >
                     <option value="">اختر المرحلة</option>
                     <option value="kg">الحضانة (3-5 سنوات)</option>
@@ -241,7 +241,7 @@ export default function ApplicationForm() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#4A7C59] focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#C5A028] focus:outline-none transition-colors resize-none text-gray-900"
                     placeholder="أي ملاحظات أو استفسارات"
                   />
                 </div>
@@ -250,7 +250,7 @@ export default function ApplicationForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-[#4A7C59] to-[#68A578] text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-gradient-to-r from-[#C5A028] to-[#E5C56C] text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
@@ -300,7 +300,7 @@ export default function ApplicationForm() {
               }`}
             >
               {/* Contact Info */}
-              <div className="bg-gradient-to-br from-[#4A7C59] to-[#68A578] rounded-3xl p-6 sm:p-8 text-white shadow-xl">
+              <div className="bg-gradient-to-br from-[#C5A028] to-[#E5C56C] rounded-3xl p-6 sm:p-8 text-white shadow-xl">
                 <h3 className="text-2xl font-bold mb-6">معلومات التواصل</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
@@ -348,7 +348,7 @@ export default function ApplicationForm() {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#4A7C59] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-[#C5A028] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <p className="text-gray-700">
@@ -356,7 +356,7 @@ export default function ApplicationForm() {
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#4A7C59] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-[#C5A028] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <p className="text-gray-700">
@@ -364,7 +364,7 @@ export default function ApplicationForm() {
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#4A7C59] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-[#C5A028] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <p className="text-gray-700">
@@ -372,7 +372,7 @@ export default function ApplicationForm() {
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#4A7C59] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-[#C5A028] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">✓</span>
                     </div>
                     <p className="text-gray-700">

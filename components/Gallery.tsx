@@ -71,14 +71,14 @@ export default function Gallery() {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f]">
-            معرض <span className="text-[#4A7C59]">الصور</span>
+            معرض <span className="text-[#C5A028]">الصور</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             جولة بصرية في أرجاء مدرستنا، حيث يلتقي التعليم المتميز بالبيئة
             المحفزة للإبداع
           </p>
-          <div className="inline-block bg-[#4A7C59]/10 px-4 py-2 rounded-lg mt-4">
-            <p className="text-sm font-medium text-[#4A7C59] flex items-center gap-2">
+          <div className="inline-block bg-[#C5A028]/10 px-4 py-2 rounded-lg mt-4">
+            <p className="text-sm font-medium text-[#C5A028] flex items-center gap-2">
               <span className="text-lg">🤖</span>
               تنويه: جميع الصور المعروضة تم إنشاؤها بواسطة الذكاء الاصطناعي لأغراض التوضيح
             </p>
@@ -93,7 +93,7 @@ export default function Gallery() {
               onClick={() => setActiveCategory(cat.id)}
               className={`px-6 py-2 rounded-full text-base font-medium transition-all duration-300 ${
                 activeCategory === cat.id
-                  ? "bg-[#4A7C59] text-white shadow-lg scale-105"
+                  ? "bg-[#C5A028] text-white shadow-lg scale-105"
                   : "bg-white text-gray-600 hover:bg-gray-100 hover:shadow"
               }`}
             >
