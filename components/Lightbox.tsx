@@ -65,14 +65,25 @@ export default function Lightbox({ src, alt, onClose }: LightboxProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {src && (
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            className="object-contain"
-            quality={100}
-            priority
-          />
+          src.endsWith('.mp4') ? (
+            <video
+              src={src}
+              className="w-full h-full object-contain"
+              controls
+              autoPlay
+              playsInline
+              muted
+            />
+          ) : (
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              className="object-contain"
+              quality={100}
+              priority
+            />
+          )
         )}
       </div>
     </div>

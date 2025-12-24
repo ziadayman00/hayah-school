@@ -11,6 +11,7 @@ interface Facility {
   description: string;
   features: string[];
   image: string;
+  video?: string;
   color: string;
 }
 
@@ -145,8 +146,39 @@ const facilities: Facility[] = [
       "استخدام الطاقة الشمسية المتجددة",
       "نظام حفظ وإعادة استخدام المياه"
     ],
-    image: "/images/school-3.jpeg",
+  image: "/images/school-3.jpeg",
     color: "from-[#C5A028] to-[#E5C56C]" // أصفر دافي
+  },
+  {
+    id: "theater",
+    title: "المسرح المدرسي",
+    description: "مسرح مجهز بأحدث تقنيات الصوت والإضاءة لاستضافة العروض الفنية والفعاليات المدرسية، مع قدرة استيعابية كبيرة.",
+    features: [
+      "نظام صوتي محيطي متطور",
+      "إضاءة مسرحية احترافية",
+      "خشبة مسرح واسعة ومجهزة",
+      "مقاعد مريحة للجمهور",
+      "غرف كواليس للفنانين",
+      "تجهيزات للعروض السينمائية"
+    ],
+    image: "/images/theater.jpeg",
+    video: "/images/theater.mp4",
+    color: "from-[#8B4513] to-[#DAA520]" // بني وذهبي
+  },
+  {
+    id: "cafeteria",
+    title: "الكافيتريا والمطعم",
+    description: "مطعم صحي يقدم وجبات متوازنة ولذيذة للطلاب، مع مساحات جلوس مريحة وأجواء تشجع على التواصل الاجتماعي.",
+    features: [
+      "وجبات صحية طازجة يومياً",
+      "خيارات متنوعة تناسب الجميع",
+      "جلسات مريحة وواسعة",
+      "نظافة وتعقيم مستمر",
+      "ركن للمشروبات والمخبوزات",
+      "نظام دفع إلكتروني سهل"
+    ],
+    image: "/images/cafeteria.jpeg",
+    color: "from-[#E67E22] to-[#F1C40F]" // برتقالي وأصفر
   }
 ];
 
@@ -232,7 +264,7 @@ const stages: Stage[] = [
       "بناء مهارات القيادة والعمل الجماعي",
       "تعزيز الوعي البيئي والمسؤولية المجتمعية"
     ],
-    image: "/images/facilities-gym.jpeg",
+    image: "/images/theater2.jpeg",
     color: "from-[#C5A028] to-[#E5C56C]" // أصفر دافي
   }
 ];
@@ -524,15 +556,36 @@ const stages: Stage[] = [
                     className="relative h-64 overflow-hidden cursor-pointer"
                     onClick={(e) => {
                       e.stopPropagation();
-                      setLightboxImage(facility.image);
+                      e.stopPropagation();
+                      setLightboxImage(facility.video || facility.image);
                     }}
                   >
-                    <Image
-                      src={facility.image}
-                      alt={facility.title}
-                      fill
-                      className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                    />
+                    {facility.video ? (
+                      <video
+                        src={facility.video}
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                      />
+                    ) : (
+                      <Image
+                        src={facility.image}
+                        alt={facility.title}
+                        fill
+                        className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      />
+                    )}
+                    {facility.video && (
+                      <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                        <div className="w-16 h-16 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                    )}
                     <div className={`absolute inset-0 bg-gradient-to-t ${facility.color} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6">
                       <h4 className="text-2xl font-bold text-white">
@@ -589,6 +642,21 @@ const stages: Stage[] = [
                 fill
                 className="object-cover"
               />
+              {selectedFacility.video && (
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <button 
+                    className="w-20 h-20 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 group/play"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setLightboxImage(selectedFacility.video || null);
+                    }}
+                  >
+                    <svg className="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </button>
+                </div>
+              )}
               <div className={`absolute inset-0 bg-gradient-to-t ${selectedFacility.color} opacity-70`} />
               <button
                 onClick={() => setSelectedFacility(null)}

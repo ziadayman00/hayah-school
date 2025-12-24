@@ -63,7 +63,7 @@ export default function Stages() {
       age: "13-15 سنة",
       icon: "🎓",
       color: "from-[#1E7F5C] to-[#5EC4A1]",
-      image: "/images/facilities-gym.jpeg",
+      image: "/images/theater2.jpeg",
       description:
         "إعداد الطلاب للمرحلة الثانوية مع التركيز على التميز الأكاديمي والقيادة",
       features: [
